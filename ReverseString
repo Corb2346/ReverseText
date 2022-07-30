@@ -1,0 +1,23 @@
+import java.util.Scanner;
+
+public class Program
+{
+	public static void main(String[] args) {
+		Scanner scanner = new Scanner(System.in);
+		String text = scanner.nextLine();
+		char[] arr = text.toCharArray();
+		char[] arrReverse = new char[arr.length];
+		int indiceReverse = arrReverse.length-1;
+		char reciveLetra;
+		for(int i=0;i<arr.length;i++){
+			reciveLetra = arr[i];
+			arrReverse[indiceReverse] = reciveLetra;
+			indiceReverse--; 
+
+		}
+
+		for(int i =0;i<arrReverse.length;i++){
+			System.out.println(arrReverse[i]);
+		}
+	}
+}
